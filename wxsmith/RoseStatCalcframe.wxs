@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="RoseStatCalcFrame">
+		<title>Rose Stat Calc</title>
+		<size>360,336</size>
+		<id_arg>0</id_arg>
+		<style>wxDEFAULT_DIALOG_STYLE</style>
+		<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+			<pos>0,16</pos>
+			<size>360,320</size>
+			<handler function="OnPanel1Paint" entry="EVT_PAINT" />
+			<object class="wxStaticBox" name="ID_STATICBOX1" variable="Box" member="yes">
+				<label>Stats</label>
+				<pos>16,48</pos>
+				<size>168,272</size>
+			</object>
+			<object class="wxSpinCtrl" name="ID_STRSPINCTRL" variable="StrSpinCtrl" member="yes">
+				<value>15</value>
+				<min>15</min>
+				<max>400</max>
+				<pos>48,88</pos>
+				<size>48,21</size>
+				<handler function="OnStrSpinCtrlChange" entry="EVT_SPINCTRL" />
+			</object>
+			<object class="wxSpinCtrl" name="ID_DEXSPINCTRL" variable="DexSpinCtrl" member="yes">
+				<value>15</value>
+				<min>15</min>
+				<max>400</max>
+				<pos>48,136</pos>
+				<size>48,21</size>
+				<handler function="OnDexSpinCtrlChange" entry="EVT_SPINCTRL" />
+			</object>
+			<object class="wxSpinCtrl" name="ID_INTSPINCTRL" variable="IntSpinCtrl" member="yes">
+				<value>15</value>
+				<min>15</min>
+				<max>400</max>
+				<pos>48,184</pos>
+				<size>48,21</size>
+				<handler function="OnIntSpinCtrlChange" entry="EVT_SPINCTRL" />
+			</object>
+			<object class="wxSpinCtrl" name="ID_CONSPINCTRL" variable="ConSpinCtrl" member="yes">
+				<value>15</value>
+				<min>15</min>
+				<max>400</max>
+				<pos>48,232</pos>
+				<size>48,21</size>
+				<handler function="OnConSpinCtrlChange" entry="EVT_SPINCTRL" />
+			</object>
+			<object class="wxSpinCtrl" name="ID_SENSPINCTRL" variable="SenSpinCtrl" member="yes">
+				<value>10</value>
+				<min>10</min>
+				<max>400</max>
+				<pos>48,280</pos>
+				<size>48,21</size>
+				<handler function="OnSenSpinCtrlChange" entry="EVT_SPINCTRL" />
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+				<label>Str</label>
+				<pos>48,72</pos>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="yes">
+				<label>Dex</label>
+				<pos>48,120</pos>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT3" variable="StaticText3" member="yes">
+				<label>Int</label>
+				<pos>48,168</pos>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT4" variable="StaticText4" member="yes">
+				<label>Con</label>
+				<pos>48,216</pos>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT5" variable="StaticText5" member="yes">
+				<label>Sen</label>
+				<pos>48,264</pos>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT6" variable="StaticText6" member="yes">
+				<label>SP Used:</label>
+				<pos>40,32</pos>
+				<font>
+					<size>8</size>
+					<weight>bold</weight>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT7" variable="StaticText7" member="yes">
+				<label>SP Available:</label>
+				<pos>16,16</pos>
+				<size>64,13</size>
+				<font>
+					<size>8</size>
+					<weight>bold</weight>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_SPAVAILTEXT" variable="SPAvailText" member="yes">
+				<label>21560</label>
+				<pos>92,16</pos>
+				<size>36,13</size>
+				<style>wxST_NO_AUTORESIZE|wxALIGN_LEFT</style>
+			</object>
+			<object class="wxStaticText" name="ID_SPUSEDTEXT" variable="SPUsedText" member="yes">
+				<label>0</label>
+				<pos>92,32</pos>
+				<size>36,13</size>
+			</object>
+			<object class="wxStaticText" name="ID_STRSPTEXT" variable="StrSPText" member="yes">
+				<label>3</label>
+				<pos>30,91</pos>
+			</object>
+			<object class="wxStaticText" name="ID_DEXSPTEXT" variable="DexSPText" member="yes">
+				<label>3</label>
+				<pos>32,139</pos>
+				<size>8,13</size>
+			</object>
+			<object class="wxStaticText" name="ID_INTSPTEXT" variable="IntSPText" member="yes">
+				<label>3</label>
+				<pos>32,187</pos>
+				<size>8,13</size>
+			</object>
+			<object class="wxStaticText" name="ID_CONSPTEXT" variable="ConSPText" member="yes">
+				<label>3</label>
+				<pos>30,235</pos>
+			</object>
+			<object class="wxStaticText" name="ID_SENSPTEXT" variable="SenSPText" member="yes">
+				<label>2</label>
+				<pos>30,283</pos>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT15" variable="StaticText8" member="yes">
+				<label>SP/AP Ratio</label>
+				<pos>112,64</pos>
+			</object>
+			<object class="wxStaticText" name="ID_STRRATIOTEXT" variable="StrRatioText" member="yes">
+				<label>0.2167</label>
+				<pos>120,90</pos>
+				<size>56,16</size>
+				<style>wxST_NO_AUTORESIZE|wxALIGN_CENTRE</style>
+			</object>
+			<object class="wxStaticText" name="ID_DEXRATIOTEXT" variable="DexRatioText" member="yes">
+				<label>0.08333</label>
+				<pos>120,138</pos>
+				<size>56,16</size>
+				<style>wxST_NO_AUTORESIZE|wxALIGN_CENTRE</style>
+			</object>
+			<object class="wxStaticText" name="ID_INTRATIOTEXT" variable="IntRatioText" member="yes">
+				<label>Label</label>
+				<pos>120,186</pos>
+				<size>56,13</size>
+				<hidden>1</hidden>
+				<style>wxST_NO_AUTORESIZE|wxALIGN_CENTRE</style>
+			</object>
+			<object class="wxStaticText" name="ID_CONRATIOTEXT" variable="ConRatioText" member="yes">
+				<label>Label</label>
+				<pos>120,234</pos>
+				<size>56,13</size>
+				<hidden>1</hidden>
+				<style>wxST_NO_AUTORESIZE|wxALIGN_CENTRE</style>
+			</object>
+			<object class="wxStaticText" name="ID_SENRATIOTEXT" variable="SenRatioText" member="yes">
+				<label>0.05</label>
+				<pos>120,282</pos>
+				<size>56,13</size>
+				<style>wxST_NO_AUTORESIZE|wxALIGN_CENTRE</style>
+			</object>
+			<object class="wxStaticBox" name="ID_APBOX" variable="APBox1" member="yes">
+				<label>Attack Power</label>
+				<pos>192,64</pos>
+				<size>80,40</size>
+			</object>
+			<object class="wxStaticBox" name="ID_DEFBOX" variable="DefBox" member="yes">
+				<label>Defense</label>
+				<pos>192,104</pos>
+				<size>80,40</size>
+			</object>
+			<object class="wxStaticBox" name="ID_MDEFBOX" variable="MDefBox" member="yes">
+				<label>M-Defense</label>
+				<pos>192,144</pos>
+				<size>80,40</size>
+			</object>
+			<object class="wxStaticBox" name="ID_ACCBOX" variable="AccBox" member="yes">
+				<label>Accuracy</label>
+				<pos>192,184</pos>
+				<size>80,40</size>
+			</object>
+			<object class="wxStaticBox" name="ID_CRITBOX" variable="CritBox" member="yes">
+				<label>Critical</label>
+				<pos>192,224</pos>
+				<size>80,40</size>
+			</object>
+			<object class="wxStaticBox" name="ID_DODGEBOX" variable="DodgeBox" member="yes">
+				<label>Dodge</label>
+				<pos>192,264</pos>
+				<size>80,40</size>
+			</object>
+			<object class="wxStaticText" name="ID_APTEXT" variable="APText9" member="yes">
+				<label>14</label>
+				<pos>200,80</pos>
+				<size>64,13</size>
+				<style>wxST_NO_AUTORESIZE|wxALIGN_RIGHT|wxALIGN_CENTRE</style>
+			</object>
+			<object class="wxStaticText" name="ID_DEFTEXT" variable="DefText" member="yes">
+				<label>5</label>
+				<pos>200,120</pos>
+				<size>64,13</size>
+				<style>wxST_NO_AUTORESIZE|wxALIGN_CENTRE</style>
+			</object>
+			<object class="wxStaticText" name="ID_MDEFTEXT" variable="MDefText" member="yes">
+				<label>9</label>
+				<pos>200,160</pos>
+				<size>64,13</size>
+				<style>wxST_NO_AUTORESIZE|wxALIGN_CENTRE</style>
+			</object>
+			<object class="wxStaticText" name="ID_ACCTEXT" variable="AccText" member="yes">
+				<label>18</label>
+				<pos>200,200</pos>
+				<size>64,13</size>
+				<style>wxST_NO_AUTORESIZE|wxALIGN_CENTRE</style>
+			</object>
+			<object class="wxStaticText" name="ID_CRITTEXT" variable="CritText" member="yes">
+				<label>13</label>
+				<pos>200,240</pos>
+				<size>64,13</size>
+				<style>wxST_NO_AUTORESIZE|wxALIGN_CENTRE</style>
+			</object>
+			<object class="wxStaticText" name="ID_DODGETEXT" variable="DodgeText" member="yes">
+				<label>18</label>
+				<pos>200,280</pos>
+				<size>64,13</size>
+				<style>wxST_NO_AUTORESIZE|wxALIGN_CENTRE</style>
+			</object>
+			<object class="wxStaticBox" name="ID_HPBOX" variable="HPBox" member="yes">
+				<label>HP</label>
+				<pos>280,80</pos>
+				<size>72,40</size>
+			</object>
+			<object class="wxStaticBox" name="ID_MPBOX" variable="MPBox" member="yes">
+				<label>MP</label>
+				<pos>280,128</pos>
+				<size>72,40</size>
+			</object>
+			<object class="wxStaticText" name="ID_HPTEXT" variable="HPText" member="yes">
+				<label>30</label>
+				<pos>288,96</pos>
+				<size>56,13</size>
+				<style>wxST_NO_AUTORESIZE|wxALIGN_CENTRE</style>
+			</object>
+			<object class="wxStaticText" name="ID_MPTEXT" variable="MPText" member="yes">
+				<label>60</label>
+				<pos>288,144</pos>
+				<size>56,13</size>
+				<style>wxST_NO_AUTORESIZE|wxALIGN_CENTRE</style>
+			</object>
+			<object class="wxChoice" name="ID_WEPCHOICE" variable="WepChoice" member="yes">
+				<content>
+					<item>One-Handed Weapon</item>
+					<item>Two-Handed Weapon</item>
+					<item>Crossbow</item>
+					<item>Bow</item>
+					<item>Katar</item>
+					<item>Dual Swords</item>
+					<item>Gun</item>
+					<item>Launcher</item>
+					<item>Magic Wand</item>
+					<item>Magic Staff</item>
+				</content>
+				<selection>0</selection>
+				<pos>200,16</pos>
+				<size>144,21</size>
+				<handler function="OnWepChoiceSelect" entry="EVT_CHOICE" />
+			</object>
+		</object>
+	</object>
+</wxsmith>

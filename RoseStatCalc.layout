@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="RoseStatCalcApp.cpp" open="0" top="0" tabpos="4">
+		<Cursor position="731" topLine="0" />
+	</File>
+	<File name="RoseStatCalcMain.cpp" open="1" top="1" tabpos="1">
+		<Cursor position="7277" topLine="107" />
+	</File>
+	<File name="RoseStatCalcMain.h" open="0" top="0" tabpos="5">
+		<Cursor position="551" topLine="68" />
+	</File>
+	<File name="char.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="108" topLine="12" />
+	</File>
+	<File name="classes.h" open="1" top="0" tabpos="3">
+		<Cursor position="343" topLine="7" />
+	</File>
+	<File name="wx_pch.h" open="0" top="0" tabpos="0">
+		<Cursor position="404" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>
